@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.prevpro {
+    padding-top: 3em;
+    font-size: 1.5em;
+}
+
+.abme {
+    font-size: 1.5em;
+}
+
+span {
+    padding-top: 3em;
+}
+
+.logo {
+    width: 10%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 28%;
+    padding: 3em;
+}
+
+
+/* controls the moving background*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #25bb8e, #2dad62, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*End of moving back ground*/
+
+.headshotmain {
+    width: 40%;
+}
+
+.headshot {
+    display: none;
+}
+
+.resmob {
+    display: none;
+}
+
+.resume {
+    margin: auto;
+    padding-top: 5em;
+    width: 70%;
+}
+
+#arrow {
+    display: none;
+}
+
+
+/* This controls about me section*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    color: #f1f1f1;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/*End of about me section control*/
+
+@media screen and (max-width: 1000px) {
+    span {
+        display: none;
+    }
+    .prevpro {
+        display: none;
+    }
+    h1 {
+        font-size: small;
+        text-align: center;
+        letter-spacing: 2px;
+        border: 3px solid #fff;
+        position: absolute;
+        top: 30%;
+        bottom: 55%;
+        right: 15%;
+        left: 15%;
+        padding: 3em;
+        padding-top: 4em;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    h1 {
+        font-size: small;
+        text-align: center;
+        letter-spacing: 2px;
+        border: 3px solid #fff;
+        position: absolute;
+        top: 30%;
+        bottom: 55%;
+        right: 15%;
+        left: 15%;
+        padding: 3em;
+        padding-top: 4em;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 10s ease-in-out infinite;
+    }
+    @keyframes change {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    nav {
+        margin: auto;
+    }
+    span {
+        display: none;
+    }
+    .prevpro {
+        display: none;
+    }
+    .logo {
+        width: 37%;
+        position: relative;
+        margin: auto;
+        padding: 0%;
+    }
+    .headshot {
+        display: block;
+        justify-content: center;
+        width: 40%;
+        margin: auto;
+        padding-top: 50em;
+    }
+    .resmob {
+        text-align: center;
+        display: block;
+        margin: auto;
+        padding: 2em;
+        padding-top: 4em;
+    }
+    @keyframes bouncing {
+        0% {
+            bottom: 0;
+        }
+        50% {
+            bottom: 20px;
+        }
+        100% {
+            bottom: 0;
+        }
+    }
+    #arrow {
+        animation: bouncing 2s infinite ease-in-out;
+        bottom: 0;
+        display: block;
+        width: 30%;
+        left: 36%;
+        position: absolute;
+    }
+}
