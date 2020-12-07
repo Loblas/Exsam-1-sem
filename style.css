@@ -52,31 +52,41 @@ span {
 }
 
 h1 {
+    margin: auto;
+    margin-top: 5em;
+    padding: 3em;
     font-size: 2.5rem;
     font-weight: 100;
     letter-spacing: 2px;
     border: 3px solid #fff;
-    position: absolute;
-    top: 40%;
-    bottom: 50%;
-    left: 28%;
-    padding: 3em;
+    text-align: center;
+    width: 35%;
 }
 
 h2 {
-    width: 40%;
-    margin: auto;
-    text-align: center;
+    margin: 5em;
+    padding: 3em;
+    display: block;
     font-size: 2.5rem;
     font-weight: 100;
     letter-spacing: 2px;
-    padding: 3em;
+    border: 3px solid #fff;
+    text-align: center;
+    width: 35%;
 }
 
 .projects {
     margin: auto;
     padding: 0%;
-    width: 80%;
+    width: 90%;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
 }
 
 .aboutpro {
@@ -89,7 +99,7 @@ h2 {
     display: grid;
     margin: auto;
     padding-left: 4em;
-    padding-bottom: 5em;
+    padding-bottom: 8em;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -120,7 +130,7 @@ body {
     height: 100vh;
     color: #fff;
     background: linear-gradient(-45deg, #25bb8e, #2dad62, #23a6d5, #23d5ab);
-    background-size: 500% 500%;
+    background-size: 600% 600%;
     position: relative;
     animation: change 10s ease-in-out infinite;
 }
@@ -208,17 +218,18 @@ body {
     font-size: 60px;
 }
 
-footer {
-    margin: auto;
-    padding: 3em;
-    position: absolute;
-    bottom: 0;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
 
 /*End of about me section control*/
+
+footer {
+    margin: auto;
+    margin-top: 13em;
+    padding: 3em;
+    bottom: 0;
+    position: relative;
+    width: 90%;
+    text-align: center;
+}
 
 @media screen and (max-width: 1000px) {
     span {
@@ -250,6 +261,7 @@ footer {
         font-weight: 100;
         letter-spacing: 1px;
         text-align: center;
+        border: solid;
     }
     .projects {
         margin: auto;
@@ -326,6 +338,7 @@ footer {
         display: block;
         margin: auto;
         width: 80%;
+        box-shadow: black;
     }
     .aboutpro {
         margin: auto;
