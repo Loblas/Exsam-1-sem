@@ -21,6 +21,11 @@ nav {
     font-size: 1.5em;
 }
 
+.cv {
+    padding-top: 3em;
+    font-size: 1.5em;
+}
+
 .abme {
     font-size: 1.5em;
 }
@@ -45,6 +50,35 @@ h1 {
     padding: 3em;
 }
 
+h2 {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 3em;
+}
+
+.projects {
+    margin: auto;
+    padding: 0%;
+    width: 80%;
+}
+
+.aboutpro {
+    margin: auto;
+    padding: 0%;
+    width: 70%;
+}
+
+.sec {
+    display: grid;
+    margin: auto;
+    padding-bottom: 5em;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 /* controls the moving background*/
 
@@ -53,7 +87,7 @@ body {
     height: 100vh;
     color: #fff;
     background: linear-gradient(-45deg, #25bb8e, #2dad62, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
+    background-size: 500% 500%;
     position: relative;
     animation: change 10s ease-in-out infinite;
 }
@@ -141,6 +175,14 @@ body {
     font-size: 60px;
 }
 
+footer {
+    margin: auto;
+    padding: 1.5em;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-evenly;
+}
+
 
 /*End of about me section control*/
 
@@ -163,6 +205,22 @@ body {
         left: 15%;
         padding: 3em;
         padding-top: 4em;
+    }
+    .cv {
+        display: none;
+    }
+    h2 {
+        margin: auto;
+        padding: 1em;
+        padding-bottom: 3em;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .projects {
+        margin: auto;
+        padding: 0%;
+        width: 50%;
     }
 }
 
@@ -208,6 +266,22 @@ body {
     }
     .prevpro {
         display: none;
+    }
+    .cv {
+        display: none;
+    }
+    h2 {
+        margin: auto;
+        padding: 1em;
+        padding-bottom: 3em;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .projects {
+        margin: auto;
+        padding: 0%;
+        width: 70%;
     }
     .logo {
         width: 37%;
