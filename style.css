@@ -5,14 +5,7 @@
 }
 
 
-/* removes the scrollbar while still being able to scroll*/
 
-::-webkit-scrollbar {
-    width: 0px;
-    /* Remove scrollbar space */
-    background: transparent;
-    /* Optional: just make scrollbar invisible */
-}
 
 
 /*Scroll bar options finished*/
