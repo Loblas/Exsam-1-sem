@@ -37,6 +37,10 @@ nav {
     display: none;
 }
 
+.home {
+    display: none;
+}
+
 span {
     padding-top: 3em;
 }
@@ -101,21 +105,18 @@ h2 {
 
 .btnam {
     margin: auto;
-    display: inline;
-    justify-content: center;
-}
-
-.btnover {
-    display: none;
-}
-
-button {
-    margin: 1em;
-    padding: 1em;
+    margin-top: 1em;
+    padding: 1.5em;
+    text-align: center;
     background: none;
     border: solid;
     color: #fff;
     font-weight: 100;
+    width: 40%;
+}
+
+.btnover {
+    display: none;
 }
 
 
@@ -272,21 +273,18 @@ footer {
         font-size: small;
         text-align: center;
         letter-spacing: 2px;
-        border: 3px solid #fff;
-        position: absolute;
-        top: 30%;
-        bottom: 55%;
+        border: solid #fff;
+        width: 50%;
         right: 15%;
         left: 15%;
         padding: 3em;
-        padding-top: 4em;
     }
     body {
         width: 100%;
         height: 100vh;
         color: #fff;
         background: linear-gradient(-45deg, #25bb8e, #2dad62, #23a6d5, #23d5ab);
-        background-size: 600% 600%;
+        background-size: 700% 700%;
         position: relative;
         animation: change 10s ease-in-out infinite;
     }
@@ -356,6 +354,41 @@ footer {
         margin: auto;
         padding-top: 50em;
     }
+    .prevmob {
+        margin: auto;
+        margin-top: 1em;
+        padding: 1.5em;
+        text-align: center;
+        background: none;
+        border: solid;
+        color: #fff;
+        font-weight: 100;
+        width: 40%;
+    }
+    .btnam {
+        margin: auto;
+        margin-top: 1em;
+        padding: 1.5em;
+        text-align: center;
+        background: none;
+        border: solid;
+        color: #fff;
+        font-weight: 100;
+        width: 40%;
+    }
+    .home {
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1.5em;
+        display: block;
+        text-align: center;
+        background: none;
+        border: solid;
+        color: #fff;
+        font-weight: 100;
+        width: 40%;
+    }
     .resmob {
         text-align: center;
         display: block;
@@ -377,17 +410,9 @@ footer {
         display: block;
         text-align: center;
     }
-    button {
-        margin: 1em;
-        padding: 1em;
-        background: none;
-        border: solid;
-        color: #fff;
-        font-weight: 100;
-        display: inline;
-    }
     .mobilbtn {
-        margin-bottom: 4em;
+        margin-bottom: 20em;
+        margin-top: 4em;
     }
     @keyframes bouncing {
         0% {
